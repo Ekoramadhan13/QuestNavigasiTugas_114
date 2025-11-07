@@ -107,6 +107,18 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
                             }
                         }
                     }
+                    Spacer(Modifier.height(20.dp))
+
+                    Text("Alamat", fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                    Spacer(Modifier.height(6.dp))
+                    OutlinedTextField(
+                        value = alamat,
+                        onValueChange = { alamat = it },
+                        label = { Text("Masukkan alamat") },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(70.dp)
+                    )
 
 
 
