@@ -35,5 +35,10 @@ fun HalamanWelcome(onNextClick: () -> Unit) {
                 contentDescription = "Logo",
                 modifier = Modifier.size(200.dp)
             )
+            Spacer(modifier = Modifier.height(24.dp))
 
+            Text(text = "Eko Ramadhan Nugroho", fontSize = 20.sp, fontWeight = FontWeight.SemiBold)
+            Text(text = "20230140114", fontSize = 16.sp)
+
+            Spacer(modifier = Modifier.height(32.dp))
         }
