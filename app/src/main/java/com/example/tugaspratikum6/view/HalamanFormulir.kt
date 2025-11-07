@@ -73,6 +73,26 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
 
                     Spacer(Modifier.height(20.dp))
 
+                    Text("Jenis Kelamin", fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                    Spacer(Modifier.height(8.dp))
+                    Column {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = jenisKelamin == "Laki-laki",
+                                onClick = { jenisKelamin = "Laki-laki" }
+                            )
+                            Text("Laki-laki")
+                        }
+                        Spacer(Modifier.height(8.dp))
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = jenisKelamin == "Perempuan",
+                                onClick = { jenisKelamin = "Perempuan" }
+                            )
+                            Text("Perempuan")
+                        }
+                    }
+
 
 
                 }
