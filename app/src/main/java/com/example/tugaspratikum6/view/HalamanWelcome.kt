@@ -41,4 +41,14 @@ fun HalamanWelcome(onNextClick: () -> Unit) {
             Text(text = "20230140114", fontSize = 16.sp)
 
             Spacer(modifier = Modifier.height(32.dp))
+
+            Button(
+                onClick = onNextClick,
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+            ) {
+                Text("Submit", fontSize = 18.sp)
+            }
         }
+    }
+}
