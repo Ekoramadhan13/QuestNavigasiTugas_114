@@ -92,6 +92,21 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
                             Text("Perempuan")
                         }
                     }
+                    Spacer(Modifier.height(20.dp))
+
+                    Text("Status Perkawinan", fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                    Spacer(Modifier.height(8.dp))
+                    Column {
+                        listOf("Lajang", "Duda", "Janda").forEach { item ->
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                RadioButton(
+                                    selected = status == item,
+                                    onClick = { status = item }
+                                )
+                                Text(item)
+                            }
+                        }
+                    }
 
 
 
