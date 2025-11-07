@@ -88,7 +88,25 @@ fun HalamanListPeserta(
                 ) {
                     Text(text = "Beranda", color = Color.White, fontSize = 18.sp)
                 }
+                Spacer(modifier = Modifier.height(10.dp))
 
-
-
+                Button(
+                    onClick = onFormClick,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(52.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF9C27B0)
+                    ),
+                    shape = MaterialTheme.shapes.large
+                ) {
+                    Text(text = "Formulir Pendaftaran", color = Color.White, fontSize = 18.sp)
+                }
             }
+        }
+    }
+}
+
+
+
+}
