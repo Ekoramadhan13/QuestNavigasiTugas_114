@@ -119,7 +119,27 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
                             .fillMaxWidth()
                             .height(70.dp)
                     )
+                    Spacer(Modifier.height(25.dp))
 
-
-
+                    Button(
+                        onClick = {
+                            if (nama.isNotBlank() && alamat.isNotBlank()) {
+                                onSubmitClick(PesertaData(nama, jenisKelamin, status, alamat))
+                            }
+                        },
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF9C27B0)),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(55.dp),
+                        shape = MaterialTheme.shapes.large
+                    ) {
+                        Text("Submit", color = Color.White, fontSize = 17.sp)
+                    }
                 }
+            }
+        }
+    }
+
+
+
+}
