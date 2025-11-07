@@ -1,0 +1,24 @@
+package com.example.tugaspratikum6.view
+
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.example.tugaspratikum6.R
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
+    var nama by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("Laki-laki") }
+    var status by remember { mutableStateOf("Lajang") }
+    var alamat by remember { mutableStateOf("") }
+}
