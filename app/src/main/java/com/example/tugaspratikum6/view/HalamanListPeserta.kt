@@ -61,6 +61,15 @@ fun HalamanListPeserta(
                 contentPadding = PaddingValues(vertical = 20.dp),
                 verticalArrangement = Arrangement.spacedBy(24.dp)
             ) {
-
-
+                items(pesertaList) { peserta ->
+                    Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+                        CardItem(label = "Nama Lengkap", value = peserta.nama)
+                        CardItem(label = "Jenis Kelamin", value = peserta.jenisKelamin)
+                        CardItem(label = "Status Perkawinan", value = peserta.status)
+                        CardItem(label = "Alamat", value = peserta.alamat)
+                    }
+                }
             }
+
+
+        }
