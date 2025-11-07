@@ -21,4 +21,19 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
     var jenisKelamin by remember { mutableStateOf("Laki-laki") }
     var status by remember { mutableStateOf("Lajang") }
     var alamat by remember { mutableStateOf("") }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        stringResource(R.string.formulir_pendaftaran),
+                        color = Color.White,
+                        fontSize = 22.sp
+                    )
+                },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFF9C27B0))
+            )
+        },
+
 }
