@@ -25,8 +25,17 @@ fun HalamanListPeserta(
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(Color(0xFF9C27B0)) // buat background ungu besar
-                    .padding(bottom = 40.dp) // menambah tinggi area ungu ke bawah
+                    .background(Color(0xFF9C27B0))
+                    .padding(bottom = 40.dp)
             ) {
-
+                TopAppBar(
+                    title = {
+                        Text(
+                            text = "List Daftar Peserta",
+                            color = Color.White,
+                            fontSize = 30.sp,
+                            fontWeight = FontWeight.Normal,
+                            modifier = Modifier.fillMaxWidth(),
+                        )
+                    },
             }
