@@ -114,7 +114,14 @@ fun CardItem(label: String, value: String) {
         colors = CardDefaults.cardColors(containerColor = Color.White),
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
     ) {
+        Column(modifier = Modifier.padding(22.dp)) {
+            Text(
+                text = label,
+                fontSize = 17.sp,
+                color = Color.Black,
+                fontWeight = FontWeight.Bold // label tebal
+            )
 
 
 
-}
+        }
