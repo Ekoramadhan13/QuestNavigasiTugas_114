@@ -38,4 +38,11 @@ fun HalamanListPeserta(
                             modifier = Modifier.fillMaxWidth(),
                         )
                     },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = Color.Transparent
+                    )
+                )
             }
+        },
+
+}
