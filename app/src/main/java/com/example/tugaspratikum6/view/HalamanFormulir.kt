@@ -52,6 +52,12 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
                 colors = CardDefaults.cardColors(containerColor = Color.White),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
             ) {
+                Column(
+                    modifier = Modifier
+                        .padding(20.dp)
+                        .fillMaxWidth(),
+                    horizontalAlignment = Alignment.Start
+                ) {
 
 
-            }
+                }
