@@ -121,7 +121,13 @@ fun CardItem(label: String, value: String) {
                 color = Color.Black,
                 fontWeight = FontWeight.Bold // label tebal
             )
-
-
-
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = value,
+                fontSize = 18.sp,
+                color = Color.DarkGray,
+                fontWeight = FontWeight.Normal // isi normal
+            )
         }
+    }
+}
