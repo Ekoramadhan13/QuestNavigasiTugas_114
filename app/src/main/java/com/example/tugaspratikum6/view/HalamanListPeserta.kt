@@ -70,6 +70,13 @@ fun HalamanListPeserta(
                     }
                 }
             }
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 4.dp), // sebelumnya 10.dp → sekarang lebih atas
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
 
 
-        }
+
+            }
