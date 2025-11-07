@@ -44,5 +44,16 @@ fun HalamanListPeserta(
                 )
             }
         },
+        containerColor = Color(0xFFF8F3FF)
+    ) { paddingValues ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+                .padding(horizontal = 24.dp, vertical = 8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceBetween
+        ) {
 
-}
+
+        }
