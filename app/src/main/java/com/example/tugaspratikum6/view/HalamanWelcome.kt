@@ -28,5 +28,12 @@ fun HalamanWelcome(onNextClick: () -> Unit) {
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.primary
             )
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.ligo_cardlst),
+                contentDescription = "Logo",
+                modifier = Modifier.size(200.dp)
+            )
 
         }
