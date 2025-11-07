@@ -20,5 +20,13 @@ fun HalamanListPeserta(
     onFormClick: () -> Unit,
     onHomeClick: () -> Unit
 ) {
+    Scaffold(
+        topBar = {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color(0xFF9C27B0)) // buat background ungu besar
+                    .padding(bottom = 40.dp) // menambah tinggi area ungu ke bawah
+            ) {
 
-}
+            }
