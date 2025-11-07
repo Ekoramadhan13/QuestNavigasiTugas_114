@@ -63,6 +63,16 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
                         fontWeight = FontWeight.Bold,
                         fontSize = 16.sp
                     )
+                    Spacer(Modifier.height(6.dp))
+                    OutlinedTextField(
+                        value = nama,
+                        onValueChange = { nama = it },
+                        label = { Text("Masukkan nama lengkap") },
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
+                    Spacer(Modifier.height(20.dp))
+
 
 
                 }
