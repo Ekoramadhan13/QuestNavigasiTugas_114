@@ -36,4 +36,17 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
             )
         },
 
-}
+        containerColor = Color(0xFFF8F3FF)
+    ) { padding ->
+        Column(
+            modifier = Modifier
+                .padding(padding)
+                .fillMaxSize()
+                .padding(20.dp)
+                .verticalScroll(rememberScrollState()),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Top
+        ) {
+
+
+        }
