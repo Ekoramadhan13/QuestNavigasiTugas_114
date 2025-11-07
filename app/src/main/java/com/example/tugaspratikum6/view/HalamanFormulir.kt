@@ -58,6 +58,11 @@ fun HalamanFormulir(onSubmitClick: (PesertaData) -> Unit) {
                         .fillMaxWidth(),
                     horizontalAlignment = Alignment.Start
                 ) {
+                    Text(
+                        "Nama Lengkap",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp
+                    )
 
 
                 }
