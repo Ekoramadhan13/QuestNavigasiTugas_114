@@ -107,6 +107,14 @@ fun HalamanListPeserta(
     }
 }
 
+@Composable
+fun CardItem(label: String, value: String) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(containerColor = Color.White),
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+    ) {
+
 
 
 }
