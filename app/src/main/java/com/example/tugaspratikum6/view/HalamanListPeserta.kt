@@ -76,6 +76,18 @@ fun HalamanListPeserta(
                     .padding(bottom = 4.dp), // sebelumnya 10.dp → sekarang lebih atas
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                Button(
+                    onClick = onHomeClick,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(52.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF9C27B0)
+                    ),
+                    shape = MaterialTheme.shapes.large
+                ) {
+                    Text(text = "Beranda", color = Color.White, fontSize = 18.sp)
+                }
 
 
 
